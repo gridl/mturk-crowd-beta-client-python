@@ -91,6 +91,9 @@ Follow these tutorials to get started:
 ## Additional Documentation
 * [REST API reference]
 
+Your use of MTurk is governed by our Participation Agreement at [https://www.mturk.com/mturk/conditionsofuse](https://www.mturk.com/mturk/conditionsofuse).  For license terms that apply to our Python client library for these single purpose APIs, please see the [LICENSE.txt] file at the root of this distribution.
+
+
 
 [an MTurk Requester account]: https://requester.mturk.com/developer
 [Amazon Web Services (AWS) account]: https://aws.amazon.com/
@@ -112,3 +115,4 @@ Follow these tutorials to get started:
 [Set up permissions to call an MTurk single purpose API]: docs/step_1_setup_aws_user.md
 [Instructions for creating your first Task for a MTurk single purpose API]: docs/step_2_first_task.md
 [REST API reference]: docs/REST.md
+[LICENSE.txt]: LICENSE

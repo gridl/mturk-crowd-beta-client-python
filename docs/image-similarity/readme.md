@@ -27,7 +27,7 @@ The API takes as input the URLs of the two images to be analyzed and returns a s
 
 | "image1" | "image2" |
 | -------- | -------- | 
-|![Image1](https://s3-us-west-2.amazonaws.com/mturk-sample-media/images-to-compare/image-similarity-a1.jpg "Preview of Image1") | ![Image2](https://s3-us-west-2.amazonaws.com/mturk-sample-media/images-to-compare/image-similarity-g1.png "Preview of Image2") |
+|![Image1](https://requester.mturk.com/assets/lucy.jpg "Preview of Image1") | ![Image2](https://requester.mturk.com/assets/gold-finding-puppy.jpg "Preview of Image2") |
 
 > Note you can host images on [Amazon S3] if you do not have your own server.
 
@@ -43,7 +43,7 @@ The API takes as input the URLs of the two images to be analyzed and returns a s
 
 Here’s how the images might be presented to Workers on MTurk.
 
-![Worker Preview of HIT](https://cdn-images-1.medium.com/max/800/1*S268GrGji75KrQmfW62LNA.png "Worker Preview of HIT")
+![Worker Preview of HIT](https://s3-us-west-2.amazonaws.com/mturk-sample-tasks/image-similarity-HIT-example.jpg "Worker Preview of HIT")
 
 The API implements an adjudication strategy based on Worker agreement and returns results only when it reaches confidence.
 
@@ -88,8 +88,8 @@ The body of a `put_task` request looks like this:
 #### Example request
 
 ```
-image1 = 'https://s3-us-west-2.amazonaws.com/mturk-sample-media/images-to-compare/image-similarity-a1.jpg'
-image2 = 'https://s3-us-west-2.amazonaws.com/mturk-sample-media/images-to-compare/image-similarity-g1.png'
+image1 = 'https://requester.mturk.com/assets/lucy.jpg'
+image2 = 'https://requester.mturk.com/assets/gold-finding-puppy.jpg'
 
 
 put_result = crowd_client.put_task('image-similarity', 'my-task-name',                         
